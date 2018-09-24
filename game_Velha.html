@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Jogo Da Velha</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<style>
+
+		
+	</style>
+	<script>
+
+				
+
+	</script>
+</head>
+<body >
+	<div id="dvmenu" >
+		<div id="dvQuemComeca" style="text-align: center">Quem Joga:</div>
+		<div style="text-align: center"><button onclick="inicia()" type="button" class="btn btn-success "><span class="glyphicon glyphicon-refresh"></span> Reiniciar Jogo</button></div>
+		<div id="dvResultado" style="text-align: center" ></div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	
+	<div id="painel" ><br/><br/><div id="subpainel"><p id="elemento_painel">Painel:</p>
+	<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th style="font-size: 15px; color:white">Modo de Jogo</th>
+        
+      </tr>
+    </thead>
+    
+     
+      <tr>
+
+        <td style="color: white"><form name="formulario"><input type="radio" id="cpu" value="cpu"  name="modo"  onclick="inicia() , zerarPlacar()" checked> Contra a CPU <br><input name="modo" type="radio" id="amigo" value="amigo"  onclick="inicia() , zerarPlacar()" > Contra um Amigo </form>	</td>
+       
+        
+    
+  </table>
+</tr>
+<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th style="font-size: 15px; color:white">Nível do Jogo</th>
+        
+      </tr>
+    </thead>
+    
+     
+      <tr>
+        <td style="color: white"><form name="nivel"><input type="radio" id="nivel" value="cpu"  name="nivel" /> Fácil<br/ > <input type="radio" id="nivel" value="cpu" checked name="nivel" /> Médio <br/> <input type="radio" id="nivel" value="cpu"  name="nivel"  /> Difícil</form></td>
+       
+        
+    
+  </table>
+</tr>
+<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th style="font-size: 15px; color:white">Placar</th>
+        
+      </tr>
+    </thead>
+    
+     
+      <tr>
+        <td id="placar" style="color: white">CPU <br/ >Jogador</td>
+
+       
+        
+    
+  </table>
+</tr></div></div>
+	<div id="dvjogo">
+
+		<div id="p1" class="posJogo" onclick="jogar(1)"></div>
+		<div id="p2" class="posJogo" onclick="jogar(2)"></div>
+		<div id="p3" class="posJogo" onclick="jogar(3)"></div>
+		<div id="p4" class="posJogo" onclick="jogar(4)"></div>
+		<div id="p5" class="posJogo" onclick="jogar(5)"></div>
+		<div id="p6" class="posJogo" onclick="jogar(6)"></div>
+		<div id="p7" class="posJogo" onclick="jogar(7)"></div>
+		<div id="p8" class="posJogo" onclick="jogar(8)"></div>
+		<div id="p9" class="posJogo" onclick="jogar(9)"></div>
+	</div>
+	<div id="painel2"><br><br><div id="subpainel2"></div><button style="margin-left: 40%"onclick="zerarPlacar()" type="button" class="btn-xs btn-success " id="botaoZerar">Zerar Placar</button></div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html> 

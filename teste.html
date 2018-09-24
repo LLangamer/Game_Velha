@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html>
+<head>
+	
+	<title>Teste</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">function RadioHab() {	
+		var form = document.Teste;	
+		var msg="";	
+		var Radio=null;	
+		Radio= form.teste;	
+		for(var i=0;i<Radio.length;i++) {		
+			if(Radio[i].checked) {			
+			msg = "Selecionado: " + Radio[i].id;		
+		}	
+	}	alert(msg)
+	;}</script>
+</head>
+	<body>
+		
+		<form name="Teste">
+			
+			<input type="radio" name="teste" id="teste1" value="1" checked>1<br>
+			<input type="radio" name="teste" id="teste2" value="2">2<br>
+			<input type="radio" name="teste" id="teste3" value="3">3<br>
+			<input type="radio" name="teste" id="teste4" value="4">4<br>
+			<input type="button" name="valorSelecionado" onclick="RadioHab()">OK
+		</form>
+	</body>
+</html>
